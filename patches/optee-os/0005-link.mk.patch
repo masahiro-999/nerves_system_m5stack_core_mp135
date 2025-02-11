@@ -1,10 +1,10 @@
---- a/core/arch/arm/kernel/link.mk
-+++ b/core/arch/arm/kernel/link.mk
-@@ -29,7 +29,6 @@ link-ldflags += $(call ld-option,-z force-bti) --fatal-warnings
+--- a/core/arch/arm/kernel/link.mk 2025-02-11 15:59:19.642180458 +0900
++++ b/core/arch/arm/kernel/link.mk 2025-02-11 16:00:41.639181614 +0900
+@@ -23,7 +23,6 @@
  endif
  link-ldflags += -T $(link-script-pp) -Map=$(link-out-dir)/tee.map
  link-ldflags += --sort-section=alignment
 -link-ldflags += --fatal-warnings
  link-ldflags += --gc-sections
-
+ 
  link-ldadd  = $(LDADD)
